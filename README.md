@@ -72,8 +72,8 @@ The system follows a classic **3-tier architecture**:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yashvi-khunt/evaluationProj.git
-   cd evaluationProj
+   git clone https://github.com/yashvi-khunt/invoice-inventory-system.git
+   cd invoice-inventory-system
    ```
 
 2. **Set up the database**
@@ -123,7 +123,7 @@ The system follows a classic **3-tier architecture**:
 | Key | Location | Description |
 |-----|----------|-------------|
 | `ConnectionStrings:DefaultConnection` | `appsettings.json` | ADO.NET connection string to your SQL Server `Evaluation` database |
-| JWT Signing Key | `Program.cs` / `LoginController.cs` | Symmetric key used to sign and validate JWT tokens — move to `appsettings.json` or a secrets manager before deploying to production |
+| JWT Signing Key | `Program.cs` / `LoginController.cs` | Symmetric key used to sign and validate JWT tokens — move to `appsettings.json` or a secrets manager before deploying to production. Built as a demonstration of full-stack .NET architecture. |
 | `baseURL` | `Frontend/EvalFrontend/js/*.js` | Base URL of the running API (default: `https://localhost:7146/api`) — update if the API is hosted elsewhere |
 
 ---
@@ -144,7 +144,7 @@ The system follows a classic **3-tier architecture**:
 ## Project Structure
 
 ```
-evaluationProj/
+invoice-inventory-system/
 ├── script.sql                          # Full SQL Server database creation script
 │
 ├── Backend/
